@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta name="description" content="Get help with ShiftPay. Find answers about subscriptions, restoring purchases, PDF and CSV exports, or contact support.">
+  <title>ShiftPay — Support</title>
+  <style>
+    :root { color-scheme: light; --blue: #0066cc; --ink: #1d1d1f; --muted: #626771; --line: #e2e6ed; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #f5f7fb; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    a { color: var(--blue); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; border-radius: 4px; }
+    .wrap { width: min(100% - 48px, 960px); margin-inline: auto; }
+    .skip { position: absolute; top: -100px; left: 16px; padding: 10px 18px; background: white; z-index: 5; }
+    .skip:focus { top: 12px; }
+    header { background: rgba(255,255,255,.9); border-bottom: 1px solid var(--line); }
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-size: 22px; font-weight: 700; letter-spacing: -.8px; text-decoration: none; color: var(--ink); display: inline-flex; align-items: center; gap: 11px; }
+    .mark { width: 34px; height: 34px; background: var(--blue); border-radius: 10px; color: white; display: grid; place-items: center; font-size: 22px; font-weight: 600; }
+    .nav-label { font-size: 14px; color: var(--muted); }
+    .hero { padding: 74px 0 39px; max-width: 680px; }
+    .eyebrow { margin: 0 0 13px; color: var(--blue); font-size: 14px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; }
+    h1 { margin: 0 0 19px; font-size: clamp(38px, 6.5vw, 62px); line-height: 1.08; letter-spacing: -2.5px; font-weight: 700; }
+    .intro { margin: 0; max-width: 580px; color: var(--muted); font-size: 20px; line-height: 1.6; letter-spacing: -.3px; }
+    .contact-card { background: white; border: 1px solid var(--line); border-radius: 24px; padding: 30px 32px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 30px; box-shadow: 0 8px 32px rgba(25,55,95,.035); }
+    h2 { font-size: 27px; line-height: 1.25; letter-spacing: -.8px; margin: 0 0 14px; }
+    .contact-card h2 { font-size: 22px; margin-bottom: 7px; }
+    .contact-card p { color: var(--muted); margin: 0 0 15px; }
+    .email { overflow-wrap: anywhere; font-weight: 500; }
+    .response { border-left: 1px solid var(--line); padding-left: 30px; }
+    .response h3 { font-size: 14px; font-weight: 500; color: var(--muted); margin: 0 0 3px; }
+    .response strong { font-size: 25px; letter-spacing: -.7px; }
+    .response p { font-size: 14px; margin: 3px 0 0; }
+    .faq { padding: 57px 0 52px; }
+    .faq > p { color: var(--muted); margin: 0 0 24px; }
+    .questions { background: white; border: 1px solid var(--line); border-radius: 20px; padding: 0 26px; }
+    details + details { border-top: 1px solid var(--line); }
+    summary { cursor: pointer; padding: 22px 30px 22px 0; font-weight: 600; position: relative; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; position: absolute; right: 1px; top: 17px; font-size: 25px; font-weight: 400; color: var(--blue); }
+    details[open] summary::after { content: "−"; }
+    .answer { padding: 0 28px 24px 0; color: var(--muted); max-width: 760px; }
+    .answer p { margin: 0 0 12px; }
+    .answer p:last-child { margin-bottom: 0; }
+    .answer ol { margin: 0; padding-left: 22px; }
+    .answer li + li { margin-top: 6px; }
+    footer { border-top: 1px solid var(--line); padding: 26px 0 34px; }
+    .footer-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 30px; }
+    .copyright { color: var(--muted); font-size: 14px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px 25px; font-size: 14px; }
+    .placeholder { color: var(--muted); }
+    .placeholder small { font-size: inherit; color: var(--muted); }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 36px, 960px); }
+      .nav { min-height: 66px; }
+      .hero { padding: 48px 0 29px; }
+      h1 { letter-spacing: -1.6px; }
+      .intro { font-size: 18px; }
+      .contact-card { grid-template-columns: 1fr; padding: 25px; gap: 24px; border-radius: 20px; }
+      .response { padding: 20px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+      .faq { padding: 40px 0; }
+      h2 { font-size: 25px; }
+      .questions { padding-inline: 20px; }
+      .answer { padding-right: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#support">Skip to content</a>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#support" aria-label="ShiftPay support"><span class="mark" aria-hidden="true">S</span>ShiftPay</a>
+      <span class="nav-label">Support Center</span>
+    </div>
+  </header>
+  <main id="support" class="wrap">
+    <section class="hero" aria-labelledby="support-title">
+      <p class="eyebrow">ShiftPay Support</p>
+      <h1>A little help.<br>More peace of mind.</h1>
+      <p class="intro">Questions about your shifts, earnings, or ShiftPay Pro? Find a quick answer below, or get in touch.</p>
+    </section>
+    <section class="contact-card" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title">Contact</h2>
+        <p>Need a hand? We’re here to help.</p>
+        <a class="email" href="mailto:alexander.a.malchev@gmail.com?subject=ShiftPay%20Support">alexander.a.malchev@gmail.com</a>
+      </div>
+      <div class="response">
+        <h3>Response time</h3>
+        <strong>24–48 hours</strong>
+        <p>We usually reply within this time.</p>
+      </div>
+    </section>
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently Asked Questions</h2>
+      <p>A few answers to keep things moving.</p>
+      <div class="questions">
+        <details>
+          <summary>How do I manage my subscription?</summary>
+          <div class="answer">
+            <p>For a ShiftPay subscription purchased through the App Store, open <strong>Settings</strong> on your iPhone, tap <strong>your name → Subscriptions</strong>, then select <strong>ShiftPay</strong> to review the available options or cancel.</p>
+            <p>If it isn’t listed, check that you’re signed in to the Apple Account used for the purchase. Contact us if you need help finding it.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How do I restore my purchases?</summary>
+          <div class="answer">
+            <p>Make sure you’re signed in to the Apple Account used for your original purchase. Open ShiftPay and look for <strong>Restore Purchases</strong> in the app’s settings or on the Pro purchase screen.</p>
+            <p>If your access isn’t restored, email us with your app version and any error message you see.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How do I export a PDF or CSV report?</summary>
+          <div class="answer">
+            <p>Open the report you want to export in ShiftPay, choose the period you need, and look for the export or share option. Select <strong>PDF</strong> for a readable report or <strong>CSV</strong> to work with your data in a spreadsheet.</p>
+            <p>Use the iOS share sheet to save or share the file. If you can’t find an export option, contact us with your app version and the report you’re trying to export.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How do I report a bug?</summary>
+          <div class="answer">
+            <p>Email <a href="mailto:alexander.a.malchev@gmail.com?subject=ShiftPay%20Bug%20Report">ShiftPay Support</a> with a short description and these details:</p>
+            <ol>
+              <li>What you were doing and the steps to reproduce the issue.</li>
+              <li>What you expected and what happened instead.</li>
+              <li>Your iPhone model, iOS version, and ShiftPay version.</li>
+              <li>A screenshot, if it helps. Hide any personal or pay information before sending.</li>
+            </ol>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footer-row">
+      <span class="copyright">© ShiftPay. All rights reserved.</span>
+      <div class="footer-links" aria-label="Additional information">
+        <!-- PRIVACY POLICY: Replace this span with <a href="YOUR_PRIVACY_POLICY_URL">Privacy Policy</a> when your policy is published. -->
+        <span class="placeholder">Privacy Policy <small>· Coming soon</small></span>
+        <!-- APP STORE: Replace this span with <a href="YOUR_APP_STORE_URL">App Store</a> when your app listing is available. -->
+        <span class="placeholder">App Store <small>· Coming soon</small></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
