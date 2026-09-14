@@ -20,7 +20,7 @@
     header { background: rgba(255,255,255,.9); border-bottom: 1px solid var(--line); }
     .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
     .brand { font-size: 22px; font-weight: 700; letter-spacing: -.8px; text-decoration: none; color: var(--ink); display: inline-flex; align-items: center; gap: 11px; }
-    .mark { width: 34px; height: 34px; background: var(--blue); border-radius: 10px; color: white; display: grid; place-items: center; font-size: 22px; font-weight: 600; }
+    .mark { width: 34px; height: 34px; border-radius: 10px; display: block; object-fit: cover; flex-shrink: 0; }
     .nav-label { font-size: 14px; color: var(--muted); }
     .hero { padding: 74px 0 39px; max-width: 680px; }
     .eyebrow { margin: 0 0 13px; color: var(--blue); font-size: 14px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; }
@@ -74,7 +74,7 @@
   <a class="skip" href="#support">Skip to content</a>
   <header>
     <div class="wrap nav">
-      <a class="brand" href="#support" aria-label="ShiftPay support"><span class="mark" aria-hidden="true">S</span>ShiftPay</a>
+      <a class="brand" href="#support" aria-label="ShiftPay support"><img class="mark" src="shiftpay-icon.png" width="34" height="34" alt="">ShiftPay</a>
       <span class="nav-label">Support Center</span>
     </div>
   </header>
